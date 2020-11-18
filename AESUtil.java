@@ -17,10 +17,10 @@ public class AESUtil {
       String valueToBeEncrypted = arguments[1];
       switch (mode) {
           case "encrypt":
-              System.out.println(encrypt(valueToBeEncrypted));
+              System.out.println("Value encrypted: " + encrypt(valueToBeEncrypted));
               break;
           case "decrypt":
-              System.out.println(decrypt(valueToBeEncrypted));
+              System.out.println("Value decrypted: " + decrypt(valueToBeEncrypted));
               break;
           default:
               System.out.println("Fuck you for providing invalid mode!!");
