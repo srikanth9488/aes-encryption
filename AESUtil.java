@@ -9,9 +9,8 @@ import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Base64;
 
-/** Fury AES Encryption utility class */
+/** AES Encryption utility class */
 public class AESUtil {
-
 
   public static void main(String[] arguments) {
       String mode = arguments[0];
@@ -24,7 +23,7 @@ public class AESUtil {
               System.out.println(decrypt(valueToBeEncrypted));
               break;
           default:
-              System.out.println("Fuck you!!");
+              System.out.println("Fuck you for providing invalid mode!!");
       }
   }
 
